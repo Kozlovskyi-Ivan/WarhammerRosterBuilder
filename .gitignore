@@ -506,3 +506,4 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/angular,visualstudio,visualstudiocode,node
+roster-builder-front/.angulardoc.json

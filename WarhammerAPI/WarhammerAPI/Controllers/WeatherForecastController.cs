@@ -29,33 +29,6 @@ namespace WarhammerAPI.Controllers
         //[HttpGet]
         //public IEnumerable<WeatherForecast> Get()
         //{
-        //    using (ApplicationContext db = new ApplicationContext())
-        //    {
-        //        //Unit unit = new Unit() { Name= "Canoptek Scarabs"};
-        //        //Models models = new Models() { BS = 0, WS = 4, Move = 10, Strength = 3, Toughness = 3, Attack = 4, Leadership = 10, Save = 6, Cost = 13, Name = "Canoptek Scarab Swarm" };
-        //        //List<Models> modelsL = new List<Models>();
-        //        //modelsL.Add(models);
-        //        ////unit.Models.Add(models);
-        //        //unit.Models = modelsL;
-        //        //unit.UnitType = new UnitType() { Type = "Fast Attack" };
-        //        //unit.UnitNumber = new UnitNumber() { NumberMin = 3, NumberMax = 9, PowerPoints = 2, PowerPointsMax = 6 };
-        //        //AbilitiesWeapon abilitiesWeapon = new AbilitiesWeapon() { Description= "If the target’s Toughness is higher than this attack’s Strength, this weapon always wounds the target on a wound roll of 5+." };
-        //        //Weapon weapon = new Weapon() {Name= "Feeder mandibles",Range= "Melee", Type= "Melee",Strength="User",AP="0",Damage="1",Cost=0 };
-        //        ////weapon.AbilitiesWeapon.Add(abilitiesWeapon);
-        //        //List<Weapon> weapons = new List<Weapon>() { weapon};
-        //        //WeaponSet weaponSet = new WeaponSet() {BuildIn=true };
-        //        ////weaponSet.Weapon.Add(weapon);
-        //        //List<WeaponSet> weaponSets = new List<WeaponSet>() { weaponSet };
-        //        //WargearSetUp wargearSetUp = new WargearSetUp();
-        //        ////wargearSetUp.WeaponSet.Add(weaponSet);
-        //        //List<WargearSetUp> wargearSetUps = new List<WargearSetUp>() { wargearSetUp };
-        //        //WargearOptions wargearOptions = new WargearOptions();
-        //        ////wargearOptions.WargearSet.Add(wargearSetUp);
-        //        //List<WargearOptions> wargearOptions1 = new List<WargearOptions>() { wargearOptions };
-        //        ////unit.WargearOptions.Add(wargearOptions);
-        //        //unit.WargearOptions = wargearOptions1;
-        //        //db.SaveChanges();
-        //    }
         //    var rng = new Random();
 
         //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -71,40 +44,7 @@ namespace WarhammerAPI.Controllers
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                //Unit unit = new Unit() { Name = "Canoptek Scarabs" };
-                //Models models = new Models() { BS = 0, WS = 4, Move = 10, Strength = 3, Toughness = 3, Attack = 4, Leadership = 10, Save = 6, Cost = 13, Name = "Canoptek Scarab Swarm" };
-                //List<Models> modelsL = new List<Models>();
-                //modelsL.Add(models);
-                //unit.Models = modelsL;
-                //unit.UnitType = new UnitType() { Type = "Fast Attack" };
-                //unit.UnitNumber = new UnitNumber() { NumberMin = 3, NumberMax = 9, PowerPoints = 2, PowerPointsMax = 6 };
-                ////abilities
-                //List<AbilitiesWeapon> abilities = new List<AbilitiesWeapon>();
-                //AbilitiesWeapon abilitiesWeapon = new AbilitiesWeapon() { Description = "If the target’s Toughness is higher than this attack’s Strength, this weapon always wounds the target on a wound roll of 5+." };
-                //abilities.Add(abilitiesWeapon);
-                ////Weapon
-                //Weapon weapon = new Weapon() { Name = "Feeder mandibles", Range = "Melee", Type = "Melee", Strength = "User", AP = "0", Damage = "1", Cost = 0 };
-                //weapon.AbilitiesWeapon = abilities;
-                //List<Weapon> weapons = new List<Weapon>();
-                //weapons.Add(weapon);
-                ////weaponSet
-                //WeaponSet weaponSet = new WeaponSet();
-                //weaponSet.Weapon = weapons;
-                //List<WeaponSet> weaponSets = new List<WeaponSet>();
-                //weaponSets.Add(weaponSet);
-                ////wargearSetUp
-                //WargearSetUp wargearSetUp = new WargearSetUp();
-                //wargearSetUp.WeaponSet = weaponSets;
-                //List<WargearSetUp> wargearSetUps = new List<WargearSetUp>();
-                //wargearSetUps.Add(wargearSetUp);
-                ////wargearOptions
-                //WargearOptions wargearOptions = new WargearOptions();
-                //wargearOptions.WargearSet = wargearSetUps;
-                //List<WargearOptions> wargearOptions1 = new List<WargearOptions>();
-                //wargearOptions1.Add(wargearOptions);
 
-                //unit.WargearOptions = wargearOptions1;
-                //db.Unit.Add(unit);
                 TestData data = new TestData();
                 data.Start();
                 //db.SaveChanges();
