@@ -10,19 +10,20 @@ import { UnitNumber } from './UnitNumber';
 import { Role } from './Role';
 
 export class Unit {
-  public UnitType: UnitType;
-  public Faction: string;
-  public Name: string;
-  public Description: string;
-  public Models: Models[];
-  public WargearOptions: WargearOptions[];
-  public UnitNumber: UnitNumber;
-  public Character: boolean;
-  public Abilities: Abilities[];
-  public  Degradation: Degradation[];
-  public Role: Role;
-  public FractionKeywords: FractionKeywords[];
-  public  Keywords: Keywords[];
-  public WarlordTrait: WarlordTrait;
-  public Relic: boolean;
+  public id?:number;
+  public unitType?: UnitType;
+  public faction?: string;
+  public name?: string;
+  public description?: string;
+  public models?: Models[];
+  public wargearOptions?: WargearOptions[];
+  public unitNumber?: UnitNumber;
+  public character?: boolean;
+  public abilities?: Abilities[];
+  public degradation?: Degradation[];
+  public role?: Role;
+  public fractionKeywords?: FractionKeywords[];
+  public keywords?: Keywords[];
+  public warlordTrait?: WarlordTrait;
+  public relic?: boolean;
 }

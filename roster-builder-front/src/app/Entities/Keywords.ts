@@ -1,6 +1,6 @@
 import { Unit } from './Unit';
 
 export class Keywords {
-  public Name: string;
-  public Unit: Unit;
+  public name?: string;
+  public unit?: Unit;
 }

@@ -1,6 +1,7 @@
+import { WeaponSet } from './WeaponSet';
 import { WargearOptions } from './WargearOptions';
 import { Weapon } from './Weapon';
 export class WargearSetUp {
-  public WargearOption: WargearOptions;
-  public WeaponSet: Weapon[];
+  public wargearOption?: WargearOptions;
+  public weaponSet?: WeaponSet[];
 }

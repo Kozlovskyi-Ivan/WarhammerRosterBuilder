@@ -1,10 +1,10 @@
 import { Unit } from './Unit';
 
 export class Abilities {
-  public Faction: string;
-  public Name: string;
-  public Description: string;
-  public Relic: boolean;
-  public Cost: number;
-  public Unit: Unit;
+  public faction?: string;
+  public name?: string;
+  public description?: string;
+  public relic?: boolean;
+  public cost?: number;
+  public unit?: Unit;
 }

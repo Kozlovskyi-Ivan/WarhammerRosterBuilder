@@ -1,10 +1,10 @@
 import { Role } from './Role';
 
 export class SpecialAbilities {
-  public Faction: string;
-  public Type: string;
-  public SubType: string;
-  public Name: string;
-  public Description: string;
-  public Role: Role;
+  public faction?: string;
+  public type?: string;
+  public subType?: string;
+  public name?: string;
+  public description?: string;
+  public role?: Role;
 }

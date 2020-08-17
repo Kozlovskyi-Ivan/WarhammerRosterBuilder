@@ -1,6 +1,6 @@
 import { Unit } from './Unit';
 
 export class UnitType {
-  public Type: string;
-  public Unit: Unit;
+  public type?: string;
+  public unit?: Unit;
 }

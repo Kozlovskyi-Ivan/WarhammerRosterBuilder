@@ -1,3 +1,39 @@
 <p>
   datasheet works!
 </p>
+<h1>{{Unit?.name}}</h1>
+<p>{{Unit?.description}}</p>
+<p>{{Unit?.unitType.type}}</p>
+<p>{{Unit?.faction}}</p>
+<ul>
+  <li *ngFor="let item of Unit?.models">
+     №{{Unit?.unitNumber.numberMin}}-{{Unit.unitNumber.numberMax}} Move:{{item.move}} BS:{{item.bs}} WS:{{item.ws}} S:{{item.strength}} T:{{item.toughness}} A:{{item.attack}} Ld:{{item.leadership}} Sv:{{item.save}}
+  </li>
+</ul>
+<ul *ngIf="Unit?.degradation" >
+  <li *ngFor="let item of Unit?.degradation">
+     {{item.hp}} BS:{{item.bs}} WS:{{item.ws}} S:{{item.strength}} T:{{item.toughness}} A:{{item.attack}} Ld:{{item.leadership}} Sv:{{item.save}}
+  </li>
+</ul>
+<p>{{Unit?.role?.name}}</p>
+<p>{{Unit?.role?.description}}</p>
+<ul *ngIf="Unit?.role?.specialAbilities" >
+  <li *ngFor="let item of Unit?.role?.specialAbilities">
+    {{item.type}} {{item.name}}  {{item.description}}
+  </li>
+</ul>
+<ul>
+  <li *ngFor="let wargearOption of Unit?.wargearOptions">
+      <div *ngFor="let wargearSet of wargearOption?.wargearSet">
+        <div *ngFor="let weaponSet of wargearSet?.weaponSet">
+          <div *ngFor="let weapon of weaponSet?.weapon">
+            {{weapon?.name}} {{weapon?.range}} {{weapon?.strength}} -{{weapon?.ap}} {{weapon?.damage}} {{wargearOption?.limit}}
+            <a *ngFor="let item of weapon?.abilitiesWeapon" >{{item?.description}} </a>
+            {{wargearOption?.limit}}
+          </div>
+        </div>
+      </div>
+  </li>
+</ul>
+<div *ngFor="let item of Unit?.fractionKeywords">{{item.name}}</div>
+<div *ngFor="let item of Unit?.keywords">{{item.name}}</div>

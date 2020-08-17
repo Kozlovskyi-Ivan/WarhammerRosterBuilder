@@ -1,7 +1,7 @@
 import { Models } from './Models';
 export class WarlordTrait {
-  public Faction: string;
-  public Name: string;
-  public Description: string;
-  public ModelMustHave: Models;
+  public faction?: string;
+  public name?: string;
+  public description?: string;
+  public modelMustHave?: Models;
 }

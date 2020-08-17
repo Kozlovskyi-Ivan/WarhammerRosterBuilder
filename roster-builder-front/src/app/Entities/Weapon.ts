@@ -1,15 +1,15 @@
 import { AbilitiesWeapon } from './AbilitiesWeapon';
 import { WeaponSet } from './WeaponSet';
 export class Weapon {
-  public Faction: string;
-  public Name: string;
-  public Range: string;
-  public Type: string;
-  public Strength: string;
-  public AP: string; // Armour Penetration
-  public Damage: string;
-  public Cost: number;
-  public Relic: boolean;
-  public WeaponSet: WeaponSet;
-  public AbilitiesWeapon: AbilitiesWeapon;
+  public faction?: string;
+  public name?: string;
+  public range?: string;
+  public type?: string;
+  public strength?: string;
+  public ap?: string; // Armour Penetration
+  public damage?: string;
+  public cost?: number;
+  public relic?: boolean;
+  public weaponSet?: WeaponSet;
+  public abilitiesWeapon?: AbilitiesWeapon[];
 }
